@@ -25,11 +25,12 @@ class KaryawanTetap extends Karyawan{
 
  const daftarKaryawan = [
     new KaryawanTetap("Budi",8000000),
-    new KaryawanKontrak("Sinta",6000000)
+    new KaryawanKontrak("Sita",6000000)
  ];
 
  daftarKaryawan.forEach(karyawan =>{
     const bonus = karyawan.hitungBonus();
     const total = karyawan.totalGaji();
     console.log(`Gaji ${karyawan.nama} Rp. ${karyawan.gaji} dan mendapatkan bonus Rp. ${bonus} jadi total Rp. ${total}`);
+
  })
